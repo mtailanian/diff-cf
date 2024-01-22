@@ -1,0 +1,27 @@
+model_path: 256x256_diffusion_uncond.pt
+steps: [150, 250]  # [50, 150, 250]
+blocks: [5, 6, 7, 8, 12]
+input_activations: false
+image_size: 256
+class_cond: false
+learn_sigma: true
+num_channels: 256
+num_res_blocks: 2
+channel_mult: ''
+num_heads: 4
+num_head_channels: 64
+num_heads_upsample: -1
+attention_resolutions: '32,16,8'
+dropout: 0.1
+diffusion_steps: 1000
+noise_schedule: 'linear'
+timestep_respacing: ''
+use_kl: False
+predict_xstart: false
+rescale_timesteps: false
+rescale_learned_sigmas: false
+use_checkpoint: false
+use_scale_shift_norm: true
+resblock_updown: true
+use_fp16: true
+use_new_attention_order: false
